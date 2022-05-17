@@ -16,15 +16,6 @@ pipeline {
             steps {
                 echo 'Hello'
                 
-            }
-        }
-           stage('build') {
-            sh 'mvn test'
-            steps {
-                echo 'build'
-                
-            }
-        }
          stage('test') {
             steps {
                 echo 'test'
